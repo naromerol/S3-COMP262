@@ -1,0 +1,37 @@
+Exercise 1 - Web Scrap
+
+>> Locate website title
+Title: Artificial Intelligence - Software Engineering Technology (Online) (Optional Co-op)
+
+>> Locate companies offering jobs
+Companies: 
+IBM Canada
+Manulife
+CIBC
+RBC
+BMO
+Bell Canada
+Scotiabank
+TD
+Toronto Transit Commission (TTC)
+American Express
+Toronto Stock Exchange
+Canadian Tire
+Top Hat
+SOTI
+
+>> Locate careers you can pursue
+Careers:
+AI Developer
+Software Engineer
+Machine Learning Engineer
+Data Analytics Developer
+Software tester
+Mobile application developer
+Computer programmer
+Systems analyst
+Data analyst
+Data Science Developer
+Database Developer
+Web application developer
+Applications or software support
