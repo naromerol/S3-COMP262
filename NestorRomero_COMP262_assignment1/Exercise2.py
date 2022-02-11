@@ -108,6 +108,7 @@ nestor_df = nestor_df.drop(columns=['user'], axis=1)
 
 #Preprocess data for analysis
 nestor_df.apply(preprocess_tweet, axis=1)
+#example extraction
 raw_tweet_example = nestor_df.loc[0,'text']
 preprocessed_tweet_example = nestor_df.loc[0,'text']
 

@@ -75,10 +75,16 @@ print(nestor_df['negative_percentage'].describe())
 #calculate scores (accuracy / f1)
 accuracy = accuracy_score(nestor_df['sentiment'], nestor_df['predicted_sentiment_score'])
 print(f'Accuracy Score: {accuracy}')
-
+#multiclass scenario - different average comparison
 f1_macro = f1_score(nestor_df['sentiment'], nestor_df['predicted_sentiment_score'], average='macro')
 print(f'F1-Macro Score: {f1_macro}')
 f1_weighted = f1_score(nestor_df['sentiment'], nestor_df['predicted_sentiment_score'], average='weighted')
 print(f'F1-Weighted Score: {f1_weighted}')
 f1_micro = f1_score(nestor_df['sentiment'], nestor_df['predicted_sentiment_score'], average='micro')
 print(f'F1-Micro Score: {f1_micro}')
+
+print(nestor_df['sentiment'].value_counts())
+print(nestor_df['predicted_sentiment_score'].value_counts())
+
+# nestor_df['match'] = nestor_df['sentiment'] == nestor_df['predicted_sentiment_score']
+# print(nestor_df['match'].value_counts())
