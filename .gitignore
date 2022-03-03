@@ -2,6 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+wk03/DataDeep/
+wk03/Glove6B/
+wk03/*.zip
+wk04/Data/
+
 
 # C extensions
 *.so
