@@ -1,0 +1,46 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "How are you?"],
+			"responses": ["Hello", "Hi", "Hi there","Hello how are you?"]
+		},
+		{
+			"tag": "thanks",
+			"patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help"],
+			"responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+		},
+		{
+			"tag": "submit_complaint",
+			"patterns": ["I want to submit a complaint", "I have a complaint", "Can I create a new complaint here?"],
+			"responses": ["I understand, what seems to be the problem?", "What is the nature of your complaint?", "Could you tell us what happened?", "Could you elaborate on what happened?" ]
+		},
+		{
+			"tag": "submit_problem",
+			"patterns": ["I have a problem", "There is a problem with my account", "My account is not working"],
+			"responses": ["I understand, what seems to be the problem?", "What seems to be the nature of the problem?", 
+			"Could you tell us what happened?", "Could you elaborate on what happened?" ]
+		},
+		{
+			"tag": "complaint_technical",
+			"patterns": ["I can't access my account", "My card is not working", "The ATM is not working", "The app is out of service"],
+			"responses": ["We will look into your access problems", "Was your card issued before February 2022?", "Our ATM network is having some issues today"]
+		},
+		{
+			"tag": "complaint_balance",
+			"patterns": ["I can't see the funds on my account", "I got a message of insufficient funds", "The balance is showing an incorrect value"],
+			"responses": ["Does your balance shows zero dollars?", "Have you configured autopayment services on your account recently?","Sorry to hear this, I can try to verify the balance for you"]
+		},
+		{
+			"tag": "complaint_service",
+			"patterns": ["The clerk was very rude", "The cashier was sleeping", "A call center agent was awful"],
+			"responses": ["Did you say good morning?", "This is really strange, where and when did this happen?", "Did you insult our employee first?"]
+		},
+		{
+			"tag": "additional_information",
+			"patterns": ["How can I contact a service agent", "How can I track my complaint", "Where can I send all the details of my complaint"],
+			"responses": ["I can transfer you to a specialized agent", "Our 24/7 complaint phone line is 555-555-5555", 
+			"You can send us the details of your complaint to complaints@bank.ca and receive a tracking id number" ]
+		}
+	]
+}
