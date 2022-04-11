@@ -6,7 +6,8 @@ wk03/DataDeep/
 wk03/Glove6B/
 wk03/*.zip
 wk04/Data/
-
+wk11/ml-100k/
+NestorRomero_COMP262_assignment3/*.pckl
 
 # C extensions
 *.so
