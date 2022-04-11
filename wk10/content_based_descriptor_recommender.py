@@ -9,13 +9,13 @@ import pandas as pd
 import numpy as np
 
 #Import data from the clean file 
-df = pd.read_csv('C:/Courses_cent/COMP 262/Recommender system/metadata_clean.csv')
+df = pd.read_csv('metadata_clean.csv')
 
 #Print the head of the cleaned DataFrame
 df.head()
 
 #Import the original file
-orig_df = pd.read_csv('C:/Courses_cent/COMP 262/Recommender system/movies_metadata.csv', low_memory=False)
+orig_df = pd.read_csv('movies_metadata.csv', low_memory=False)
 
 #Add the useful features into the cleaned dataframe
 df['overview'], df['id'] = orig_df['overview'], orig_df['id']

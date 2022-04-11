@@ -18,7 +18,7 @@ def convert_int(x):
    
 #Load the data
     
-df = pd.read_csv('C:/Courses_cent/COMP 262/Recommender system/movies_metadata.csv', low_memory=False)
+df = pd.read_csv('movies_metadata.csv', low_memory=False)
 
 #Print all the features (or columns) of the DataFrame
 df.columns
@@ -78,4 +78,4 @@ gen_df.head(25)
 ### Ask for input
 #Generate the chart for top animation movies and display top 5.
 return_df=build_chart(gen_df)
-return_df.head(10)
+print(return_df.head())
