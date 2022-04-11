@@ -122,13 +122,11 @@ def recommend_songs(song_title, data, cos_similarities):
     idx = []
     try:
         idx = title_keys[song_title]
-        if len(idx) > 1:
-            idx = idx[0]
-    except KeyError as ke:
+        sim_scores = list(enumerate(cos_similarities[idx]))
+        sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)    
+    except Exception as ke:
+        print(ke)
         return []
-    
-    sim_scores = list(enumerate(cos_similarities[idx]))
-    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
     
     # Select top 10 song's scores
     sim_scores = sim_scores[1:11]
